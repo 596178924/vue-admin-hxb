@@ -1,0 +1,11 @@
+/*
+	百度地图样式设置	
+*/
+/*	默认隐藏百度自带logo */
+.BMap_cpyCtrl {
+	display: none;
+}
+
+.anchorBL {
+	display: none;
+}

@@ -1,0 +1,59 @@
+@charset "utf-8";
+@import "mixin.scss";
+@import "./baiduMap.css";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  // border: none;
+}
+html,
+body {
+	// @include base-scrollbar; //引入mixin.scss的滚动条样式
+	position: relative;
+	overflow: auto;
+	height: 100vh;
+	font-size: 14px;
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+	zoom: 1;//缩放
+	text-rendering: optimizeLegibility; //移动端不要用这个
+	color: #333333;
+	scroll-behavior: smooth; //平滑滚动
+	
+	/*文字抗锯齿渲染*/
+	-webkit-font-smoothing: antialiased; /*chrome、safari*/
+	-moz-osx-font-smoothing: grayscale;/*firefox*/
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+img {
+	vertical-align: middle;
+	width: 100%;
+	object-fit: cover;//超出部分裁剪
+}
+p { word-wrap:break-word; }//p标签自动换行
+// i {
+// 	font-style: normal;
+// }
+// u {
+// 	text-decoration: none;
+// }
+// input{ outline:0;}
+textarea {
+	resize: none;
+}
+button:focus,
+input:focus,
+textarea:focus {
+	outline: none;
+}
